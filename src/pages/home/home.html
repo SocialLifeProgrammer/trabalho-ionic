@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Caderno de Receitas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating="">Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="receita.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating="">Ingrediente</ion-label>
+      <ion-input type="textArea" [(ngModel)]="receita.ingrediente"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating="">Modo de Preparo</ion-label>
+      <ion-input type="textArea" [(ngModel)]="receita.modopreparo"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full round (click)="cadastrarReceita()">
+    Cadastrar Receita</button>
+
+
+<button ion-button full round (click)="chamarBuscareceita()">
+  Ver Receitas</button>
+
+</ion-content>
